@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="intergalactica, inter galactica, discord, steamladder, namesteal">
+	<meta name="subject" content="intergalactica">
+	<meta name="description" content="Privet tiotya Daria.Dazhe ne putaites eto povtoritq.">
+	<meta name="robots" content="index,follow">
+	
+	<meta name="author" content="MaksimSerov">
+	<meta name="url" content="https://maksimshadow.xyz/">
+	
+	<meta name="designer" content="https://vk.com/shadow_csgo">
+	<meta name="copyright" content="https://vk.com/shadow_csgo">
+	
+	<title>Shadow</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<embed src="assets/sound.mp3" loop="true" hidden="true"></embed>
+	
+	<link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
+  </head>
+  <body oncontextmenu="return false" onclick="OnClickBody();"> 
+	<div id="particles-js"></div>
+	<div id="header" class="col-md-12 text-center"> 
+		
+	</div>		
+	<div id="content" class="col-md-12 text-center"> 
+		<label id="lbl-content">SHADOW</label><br />
+	
+		<button id="steam" onclick="OnClickButton('https://steamcommunity.com/id/maksimshadow_csgo/');" type="button" class="btn btn-default btn-circle btn-xl"><i class="fab fa-steam-symbol"></i></button>
+		<button id="instagram" onclick="OnClickButton('https://www.instagram.com/only_your_shadows/');" type="button" class="btn btn-default btn-circle btn-xl"><i class="fab fa-instagram"></i></button>	
+		<button id="youtube" onclick="OnClickButton('https://www.youtube.com/channel/UC2bQ_dxvUAKZHZby5gAxAYA');" type="button" class="btn btn-default btn-circle btn-xl"><i class="fab fa-youtube"></i></button>
+	</div>
+	<div id="footer" class="col-md-12 text-center"> 
+		<label id="lbl-footer">© Website by <a href="https://vk.com/shadow_csgo" target="_blank">MaksimShadow</a></label>
+	</div>	
+  </body>  
+</html>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+
+	var StyleLayoutClicked = false;
+
+	function OnClickBody() 
+	{	
+		if (StyleLayoutClicked == false) 
+		{
+			document.getElementById("particles-js").style.background = "white";
+			document.getElementById("lbl-content").style.color = "#1a1a1a";
+			document.getElementById("lbl-footer").style.color = "#1a1a1a";
+			
+			document.getElementById("steam").style.color = "#1a1a1a";
+			document.getElementById("instagram").style.color = "#1a1a1a";
+			document.getElementById("youtube").style.color = "#1a1a1a";
+			
+			StyleLayoutClicked = true;
+		} 
+		else 
+		{
+			document.getElementById("particles-js").style.background = "#1a1a1a";
+			document.getElementById("lbl-content").style.color = "white";
+			document.getElementById("lbl-footer").style.color = "white";
+			
+			document.getElementById("steam").style.color = "white";
+			document.getElementById("instagram").style.color = "white";
+			document.getElementById("youtube").style.color = "white";
+			
+			StyleLayoutClicked = false;
+		}
+	}
+
+	function OnClickButton(url) 
+	{
+		window.open(url, '_blank');
+	}
+
+</script>
